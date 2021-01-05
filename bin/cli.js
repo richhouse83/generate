@@ -8,11 +8,11 @@ const [, , ...args] = process.argv;
 if (args[1] === "-s") {
   serverGenerator(args[0], (err) => {
     if (err) throw err;
-    else console.log(`${args[0]} server files created - run npm install!`);
+    else console.log(`${args[0]} server files created`);
   });
 } else {
   projectGenerator(args[0], (err) => {
     if (err) throw err;
-    else console.log(`${args[0]} files created - run npm install!`);
+    else console.log(`${args[0]} files created `);
   });
 }
